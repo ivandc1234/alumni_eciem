@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Alumni ECIEM</title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="{% static 'css/estilo-ingreso-registro.css' %}">
+	
+
+</head>  
+<body>
+
+    {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+
+ <form method="POST" class="formulario">
+	 {% csrf_token %} 
+    <h1>Formulario de Registro</h1>
+     <div class="contenedor">
+     
+        <div class="input-contenedor">
+         <input type="text" name="username" minlength="9" maxlength="9" placeholder="Run (sin puntos ni guión)" required="" pattern="[0-9]+" autocomplete="off" >
+         
+        </div>
+
+        <div class="input-contenedor">
+			{{form.email}} 
+        </div>
+
+         
+        <div class="input-contenedor">
+			{{form.password1}} 
+         </div>
+
+        <div class="input-contenedor">
+			{{form.password2}} 
+         </div>
+
+         <input type="submit" value="Regístrate" class="button">
+         {{form.errors}}
+         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+		 <p>¿Ya tienes una cuenta?<a class="link" href="{% url 'login' %}"> Ingresar</a></p>
+     </div>
+    </form>
+</body>
+</html>

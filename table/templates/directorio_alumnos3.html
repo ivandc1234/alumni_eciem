@@ -1,0 +1,56 @@
+{% extends 'base3.html' %}
+
+
+{% block title %}Directorio{% endblock title %}
+
+{% block content %}
+
+
+<div class="container">
+<form method="get">
+
+    <div class="form-control">{{myfilter.form}}</div>
+    <br><br>
+    <button class="btn2 btn btn-secondary" type="submit">Filtrar Resultado</button>
+
+</form>
+
+<br><br><br>
+
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Carrera</th>
+                <th scope="col">Correo</th>
+                <th scope="col">linkedin</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for persona in personas%}
+            <tr>
+                <td>{{persona.nombres}}</td>
+                <td>{{persona.apellidos}}</td>
+                <td>{{persona.carrera}}</td>
+                <td>{{persona.user.email}}</td>
+                <td>{{persona.linkedin}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</div>
+{% endblock content %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</html>

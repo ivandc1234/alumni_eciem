@@ -1,0 +1,113 @@
+{% extends 'base3.html'%}
+
+{% block title %}Área Administrador{% endblock title %}
+
+
+ {% load static %} {% block content %}
+
+
+{% load static %}
+
+
+<div class="container">
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'img/img_admin/boton_bd.png' %}" class="img-admin"
+        alt="Hollywood Sign on The Hill" />
+      <div class="card-body">
+        <a class="link_area" href="{% url 'directorio2' %}"><h5 class="card-title">Base de Datos de Egresados</h5></a>
+        <p class="card-text">
+            Revisa y descarga la base de datos de egresados
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'img/img_admin/boton_mapa.png' %}" class="img-admin"
+        alt="Palm Springs Road" />
+      <div class="card-body">
+        <a class="link_area" href="{% url 'geo' %}"><h5 class="card-title">Georreferencia</h5></a>
+        <p class="card-text">
+            Conoce la ubicación de los egresados en el mundo
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'img/img_admin/boton_django.png' %}" class="img-admin"
+        alt="Los Angeles Skyscrapers" />
+      <div class="card-body">
+        <a  class="link_area" href="{% url 'admin:index' %}"><h5 class="card-title">Administrador de Django</h5></a>
+        <p class="card-text">
+            Accede al administrador de django
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'img/img_admin/boton_empleos.png' %}" class="img-admin"
+        alt="Skyscrapers" />
+      <div class="card-body">
+        <a class="link_area" href="{% url 'home' %}"><h5 class="card-title">Bolsa Laboral</h5></a>
+        <p class="card-text">
+            Visualiza los cambios realizados en la bolsa laboral
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'img/img_admin/boton_beneficios.png' %}" class="img-admin"
+        alt="Skyscrapers" />
+      <div class="card-body">
+        <a class="link_area" href="{% url 'beneficios' %}"><h5 class="card-title">Beneficios</h5></a>
+        <p class="card-text">
+            Visualiza los cambios realizados en beneficios <br><br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'img/img_admin/boton_eventos.png' %}" class="img-admin"
+        alt="Skyscrapers" />
+      <div class="card-body">
+        <a class="link_area" href="{% url 'actividades' %}"><h5 class="card-title">Eventos</h5></a>
+        <p class="card-text">
+            Visualiza los cambios realizados en eventos
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+{% endblock content %}
+
+
+
+<script type="text/javascript" src={% static 'js/script.js' %}></script>

@@ -1,0 +1,37 @@
+{% extends 'base3.html' %}
+
+{% block title %}Contacto Alumni{% endblock %}
+
+{% block content %}
+
+
+
+<section id="contacto_alumni">
+<h3 class="titulo-seccion">Contáctanos</h3>
+<div class="contenedor-form">
+<form action="{% url 'contact_alumni' %}" method="POST">
+    {% csrf_token %}
+    <div class="fila mitad">
+        <input type="text" name="message_name" placeholder="Nombre Completo *" class="input-mitad">
+        <input type="email" name="message_email" placeholder="Dirección de Email" class="input-mitad">
+    </div>
+    <div class="fila">
+        <select name="asunto" class="form-select" aria-label="Default select example">
+            <option disabled selected>Selecciona un Asunto</option> 
+            <option value="volvo">Ofrezco oportunidad laboral</option>
+            <option value="saab">Ofrezco beneficios/descuentos</option>
+            <option value="mercedes">Quiero impartir cursos/talleres de inserción laboral</option>
+            <option value="audi">Quiero impartir cursos/talleres de alguna especialización</option>
+            <option value="audi">Quiero organizar un evento de egresados</option>
+          </select>
+    </div>
+    <div class="fila">
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje" class="input-full"></textarea>
+    </div>
+    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+</form>
+</div>
+</section>
+
+
+{% endblock %}

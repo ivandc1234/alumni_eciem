@@ -1,0 +1,65 @@
+{% extends 'base3.html' %}
+
+
+{% block title %}Base de Datos Egresados{% endblock title %}
+
+
+{% block content %}
+
+
+
+<div class="container">
+
+<form method="get">
+
+    <div class="filtro_directorio">{{myfilter.form}}</div>
+    <button class="btn2 btn btn-secondary" type="submit">Filtrar Resultado</button>
+
+</form>
+
+<a href="export_csv" class="btn2 btn btn-secondary mt-5">Descargar csv</a>
+
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Rut</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Carrera</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Área de Interés</th>
+                <th scope="col">Situación laboral</th>
+                <th scope="col">Programas de Interés</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for persona in personas %}
+            <tr>
+                <th>{{persona.user.username}}</th>
+                <td>{{persona.nombres}}</td>
+                <td>{{persona.apellidos}}</td>
+                <td>{{persona.carrera}}</td>
+                <td>{{persona.user.email}}</td>
+                <td>{{persona.area_interes}}</td>
+                <td>{{persona.situacion_laboral}}</td>
+                <td>{{persona.programas_interes}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</div>
+
+
+{% endblock content %}
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+

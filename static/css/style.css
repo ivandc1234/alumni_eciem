@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #fff;
+    overflow: hidden;
+}
+
+nav{
+    background: #1e4296;
+    height: 100px;
+    position: relative;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    line-height: 80px;
+    z-index: 100;
+}
+
+
+.container-logo{
+    margin-left: 20px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.container-logo img{
+    padding: auto;
+    margin-top: 10px;
+}
+
+.container-logo span{
+    color: #0590ec;
+    font-weight: 700;
+
+}
+
+.links .link{
+    display: inline-block;
+
+}
+.links .link a{
+    text-decoration: none;
+    color: #d1f1f4;
+    font-weight: 20px;
+    margin: 0 20px;
+    letter-spacing: 0;
+    transition: .3s;
+}
+
+
+.links .link a:hover{
+    color: #487abb;
+
+}
+
+
+
+.toggle{
+    color: black;
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+
+
+/* DROPDOWM MENU */
+.dropbtn {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #23415b;
+    text-decoration: underline 2px white;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 2px 2px !important;
+    margin: 0 10px !important;
+    text-decoration: none;
+    display: block;
+    letter-spacing: normal !important;
+  }
+  
+  .dropdown-content a:hover {background-color: #23415b}
+
+  .dropdown-content a:hover {color: #db6e59}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+
+
+
+@media screen and (max-width:800px){
+    .toggle{
+        display: inline-block;
+
+
+    }
+    .dropbtn{
+        display: none;
+    }
+
+    .links{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #23415b;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh 80px);
+        width: 100%;
+        z-index: -1;
+        top: -100vh;
+        transition: .2s;
+    }
+
+    .active{
+        top: 80px;
+    }
+
+    .links .link:hover{
+        background: #051c38;
+        
+    }
+}

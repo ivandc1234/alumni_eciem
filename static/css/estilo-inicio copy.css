@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+.link_publicaciones{
+    text-decoration: none;
+    
+}
+.nav-link{
+    text-transform: uppercase;
+    color: #ffff !important;
+}
+
+.btn2:hover{
+    background: #db6e59 !important;
+}
+.form-control{
+    margin-bottom: 25px !important;
+    display: grid !important;
+}
+
+.img-admin {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+  }
+
+
+.filtro_directorio{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 1em;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.csv{
+    margin-top: 40px;
+}
+
+/* ***  Paginación */
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color:#db6e59 ;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.nombre_perfil {
+    color:#000;
+    border-radius: 15px;
+}
+
+.nombre_perfil a{
+    color:#000 !important;
+    text-transform: capitalize !important;
+}
+
+.nombre_perfil a:hover{
+    color:#000;
+}
+
+/****  Area alumni     */
+.link_area{
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+.link_area:hover{
+    color: #db6e59;
+    list-style: none;
+    text-decoration: none;
+}
+/* *********************************************************************************************** */
+/*                                             INICIO                                              */
+/* *********************************************************************************************** */
+
+
+.nombre-usuario{
+    color: black;
+    margin-top: 15px;
+}
+
+#inicio .contenido header {
+    background-color: rgba(30, 66, 150);
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #db6e59;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #db6e59;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: #db6e59;
+}
+
+#inicio .contenido header .contenido-header .seleccionado {
+    color: #db6e59;
+}
+
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 110vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin:5px;
+    padding: 10px 15px;
+    border: 2px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+    background-color:  #1e4296;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color:  #db6e59;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
+
+
+/* *********************************************************************************************** */
+/*                                          QUIÉNES SOMOS                                          */
+/* *********************************************************************************************** */
+
+#quienes-somos {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#quienes-somos .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#quienes-somos .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#quienes-somos .quienes-somos {
+    margin: 0 40px;
+}
+
+#quienes-somos .quienes-somos .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#quienes-somos .quienes-somos h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#quienes-somos .quienes-somos h2 span {
+    color: #db6e59;
+}
+
+#quienes-somos .quienes-somos h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#quienes-somos .quienes-somos p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#quienes-somos .quienes-somos a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#quienes-somos .quienes-somos a:hover {
+    background-color: #db6e59;
+    color: #fff;
+}
+
+
+
+/* *********************************************************************************************** */
+/*                                            BENEFICIOS                                           */
+/* *********************************************************************************************** */
+
+#beneficios {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#beneficios .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#beneficios .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+#beneficios .fila .beneficio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#beneficios .fila .beneficio:hover {
+    box-shadow: 5px 5px 10px #db6e59, -5px -5px 10px #1e4296;
+}
+
+#beneficios .fila .beneficio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#beneficios .fila .beneficio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#beneficios .fila .beneficio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#beneficios .fila .beneficio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#beneficios .fila .beneficio p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* *********************************************************************************************** */
+/*                                         VUELVE A LA UCN                                         */
+/* *********************************************************************************************** */
+
+#vuelve-a-la-ucn {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#vuelve-a-la-ucn .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#vuelve-a-la-ucn .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#vuelve-a-la-ucn .fila .opciones {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#vuelve-a-la-ucn .fila .opciones img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#vuelve-a-la-ucn .fila .opciones:hover img {
+    filter: grayscale(0);
+}
+
+#vuelve-a-la-ucn .fila .opciones .informacion {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(30, 66, 150, .8);
+    color: #db6e59;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#vuelve-a-la-ucn .fila .opciones:hover .informacion {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+
+/* *********************************************************************************************** */
+/*                                             CONTACTO                                            */
+/* *********************************************************************************************** */
+
+#contacto {
+    padding: 100px 15px;
+    background-color: #f3f3f3;
+}
+
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+
+#contacto .btn-enviar:hover {
+    background-color:#db6e59;
+    color: #fff;
+}
+
+
+/* *********************************************************************************************** */
+/*                                             CONTACTO  ALUMNI                                          */
+/* *********************************************************************************************** */
+
+#contacto_alumni {
+    padding: 100px 15px;
+    background-color: #fff;
+}
+
+#contacto_alumni .titulo-seccion {
+    margin-bottom: 20px;
+}
+
+#contacto_alumni .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto_alumni .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto_alumni .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto_alumni .contenedor-form input,
+#contacto_alumni .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+
+#contacto_alumni .contenedor-form .mitad input {
+    width: 48%;
+}
+
+#contacto_alumni .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto_alumni .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contacto_alumni .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+
+#contacto_alumni .btn-enviar:hover {
+    background-color:#db6e59;
+    color: #fff;
+}
+
+
+/* *********************************************************************************************** */
+/*                                              FOOTER                                             */
+/* *********************************************************************************************** */
+
+
+
+footer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(30, 66, 150);
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 26px;
+
+}
+
+
+
+/* *********************************************************************************************** */
+/*                                            RESPONSIVE                                           */
+/* *********************************************************************************************** */
+
+@media screen and (max-width: 800px) {
+    .redes {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(30, 66, 150, .9);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+
+    /* QUIÉNES SOMOS */
+
+    #quienes-somos {
+        padding: 50px 0;
+        display: block;
+    }
+    #quienes-somos .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+    #quienes-somos .contenedor-foto img {
+        padding: 8px;
+    }
+    #quienes-somos .quienes-somos .titulo-seccion {
+        text-align: center;
+    }
+    #quienes-somos .quienes-somos h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+    /* BENEFICIOS */
+
+    #beneficios {
+        padding: 50px 15px;
+    }
+    #beneficios .fila {
+        display: block;
+    }
+    #beneficios .fila .beneficio {
+        margin: 10px auto;
+    }
+
+
+    /* VUELVE A LA UCN */
+    
+    #vuelve-a-la-ucn {
+        padding: 50px 0;
+    }
+    #vuelve-a-la-ucn .fila {
+        display: block;
+    }
+    #vuelve-a-la-ucn .fila .opciones {
+        margin: 10px auto;
+    }
+
+
+    /* CONTACTO */
+
+    #contacto {
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+
+}

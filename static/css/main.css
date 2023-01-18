@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{ 
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+
+ul{
+    display: flex;
+    background: #23415b;
+    text-decoration: none;
+    padding: 40px;
+    margin-bottom: 60px;
+    
+
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    
+}
+
+.nav a{
+    color: #ffff;
+}
+
+.botones a{
+    color: #23415b;
+    font-weight: bold;
+}
+
+.botones a:hover{
+    color: #ed9265 ;
+}
+
+
+.nombre_usuario{
+    margin-left: 800px;
+    text-transform: uppercase;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.mapa{
+    width: 1200px;
+}
+
+.redireccion_login {
+    margin: 20px 0;
+}
+
+
+.redireccion_login a{
+    color: orange;
+}
+
+
+.titulo-directorio{
+    align-items: center;
+    margin-left: 70px;
+}
+
+.filtro{
+    
+    margin-left: 50px;
+}
+
+.directorio{
+    align-items: center;
+    margin-left: 70px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+
+.directorio-primero{
+    margin-top: 70px;
+}

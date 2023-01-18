@@ -1,0 +1,33 @@
+{% extends 'base3.html' %}
+
+<h2>Perfil egresado</h2>
+
+{% block content %}
+<div class="container">	
+<form action="" method="POST">
+	{% csrf_token %}
+
+	{{form_p}}
+	{{form_b}}
+	{{form_u}} <br>
+	{{form_c}}
+
+	<button class="btn btn-secondary mt-4" type="submit">Enviar</button>
+
+</form>
+
+</div>
+
+
+
+
+{% load static %}
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+{% load static %}
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh7orioR2Q-8oIe-vYWjVH6a5b_1tjuzQ&callback=initAutocomplete&libraries=places&v=weekly"
+    type="text/javascript"></script>
+
+{% load static %}
+<script type="text/javascript" src={% static 'js/ubicacion.js' %}></script>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base3.html' %}
+
+{% block title %}Bolsa Laboral{% endblock title %}
+
+{% block content %}
+
+
+
+{% load static %}
+
+
+<div class="container">
+<h1 class="title text-center mb-5">Ofertas laborales</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+  {% for project in object_list %}
+  <div class="col">
+    <div class="card">
+      <img src="{{project.imagen.url}}" class="card-img-top"
+        alt="Hollywood Sign on The Hill" />
+      <div class="card-body">
+        <h5 class="card-title">{{project.titulo}}</h5>
+        <p class="card-text">
+            {{project.descripcion | truncatechars:50}}
+        </p>
+        <a class="link_publicaciones" href="{% url 'post_detail' project.id %}">Ver oferta</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  {% endfor %}
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock content %}
